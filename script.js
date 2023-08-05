@@ -34,7 +34,7 @@ async function ShowData() {
 
   console.log(IPAddress)
 
-  await fetch(`https://ipinfo.io/${IPAddress}?token=30dd7efacbc702`)
+  await fetch(`https://ipinfo.io/103.198.173.228?token=30dd7efacbc702`)
   .then(response => response.json())
   .then(response => locationData=response)
   .catch(()=>{ alert("Problem with fetching data")});
